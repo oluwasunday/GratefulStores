@@ -1,0 +1,56 @@
+[
+  {
+    "Id": 1,
+    "Name": "Sharron Chase",
+    "Description": "Ipsum do exercitation culpa enim laboris enim id nostrud elit excepteur sunt incididunt do. Qui velit cupidatat reprehenderit minim nisi excepteur occaecat exercitation consequat id. Voluptate dolor aute aute laboris in Lorem exercitation elit anim elit ad. Fugiat deserunt nostrud exercitation aute laboris quis enim culpa anim. Officia nulla consectetur pariatur laboris nulla nulla fugiat.\r\n",
+    "Price": 22,
+    "PictureUrl": "http://placehold.it/32x32",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Christa Horn",
+    "Description": "Consectetur pariatur ipsum non cupidatat exercitation sunt dolore. Quis laboris reprehenderit adipisicing commodo labore ullamco nisi nisi elit. Proident dolor ea id proident ut non eu id cillum id. Excepteur laboris adipisicing dolor eiusmod quis et nisi amet consequat minim ex. Ad id ut consectetur exercitation nisi. Quis anim mollit dolor do duis. Consequat in proident mollit eu dolore elit est enim incididunt sit magna irure.\r\n",
+    "Price": 33,
+    "PictureUrl": "http://placehold.it/32x32",
+    "ProductTypeId": 1,
+    "ProductBrandId": 6
+  },
+  {
+    "Id": 3,
+    "Name": "Jeannette Rosario",
+    "Description": "Dolor quis do cillum do do laborum reprehenderit sit excepteur aute voluptate esse. Ad nulla anim proident ea minim. Ullamco incididunt aliquip nostrud laborum do.\r\n",
+    "Price": 25,
+    "PictureUrl": "http://placehold.it/32x32",
+    "ProductTypeId": 4,
+    "ProductBrandId": 1
+  },
+  {
+    "Id": 4,
+    "Name": "Green Angular Angelina Mullins",
+    "Description": "Tempor elit officia id ea officia nostrud aute adipisicing. Laboris veniam minim qui reprehenderit excepteur cillum incididunt laborum veniam ad ea est nisi commodo. Ullamco cupidatat dolor in ullamco. Eu mollit laborum non magna do id do aliqua incididunt laborum nisi elit eu. Consequat velit veniam in est enim ullamco proident nisi id et nisi excepteur.\r\n",
+    "Price": 29,
+    "PictureUrl": "http://placehold.it/32x32",
+    "ProductTypeId": 3,
+    "ProductBrandId": 3
+  },
+  {
+    "Id": 5,
+    "Name": "Angular Gordon",
+    "Description": "Exercitation eiusmod laborum est laboris nostrud eiusmod ad enim eiusmod in cillum sint duis ut. Id nulla ut fugiat quis nostrud veniam dolor dolor enim dolor velit eiusmod aliqua laborum. Cillum ullamco ut anim elit ea labore ut et qui excepteur sunt ipsum occaecat. Nisi aliqua sit labore non minim duis tempor esse fugiat est et dolore sunt. Dolor sit quis consequat tempor. Adipisicing ullamco consequat excepteur amet officia enim aute dolor veniam.\r\n",
+    "Price": 32,
+    "PictureUrl": "http://placehold.it/32x32",
+    "ProductTypeId": 1,
+    "ProductBrandId": 5
+  },
+  {
+    "Id": 6,
+    "Name": "Core Board Aguirre",
+    "Description": "Laboris anim id amet elit voluptate. Quis anim elit nisi fugiat magna amet occaecat culpa ad tempor labore incididunt elit enim. Lorem ut labore ea labore eiusmod aliqua aute eiusmod. Ipsum ullamco cupidatat exercitation non deserunt ullamco consequat pariatur commodo id ullamco. Adipisicing cillum est fugiat consequat veniam pariatur exercitation amet.\r\n",
+    "Price": 20,
+    "PictureUrl": "http://placehold.it/32x32",
+    "ProductTypeId": 3,
+    "ProductBrandId": 2
+  }
+]
