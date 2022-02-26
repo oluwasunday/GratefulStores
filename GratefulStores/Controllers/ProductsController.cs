@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,24 +12,24 @@ namespace GratefulStores.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-    private readonly StoreContext _context;
+    private readonly IProductRepository _productRepository;
 
-    public ProductsController(StoreContext context)
+    public ProductsController(IProductRepository productRepository)
     {
-      _context = context;
+      _productRepository = productRepository;
     }
 
     [HttpGet]
         public async Task<IActionResult> GetProducts()
         {
-            var products = await _context.Products.ToListAsync();
+            var products = await _productRepository.GetProductsAsync();
             return Ok(products);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int id)
         {
-            var products = await _context.Products.FindAsync(id);
+            var products = await _productRepository.GetProductByIdAsync(id);
             return Ok(products);
         }
     }
