@@ -4,12 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Entities;
 using Core.Interfaces;
+using Core.Specifications;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository
 {
-  public class ProductRepository : IProductRepository
+  public class ProductRepository : IRepository<Product>, IProductRepository
   {
     private readonly StoreContext _context;
 
@@ -43,5 +44,25 @@ namespace Infrastructure.Repository
                 .Include(x => x.ProductBrand)
                 .ToListAsync();
     }
-  }
+
+        public Task<Product> GetByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IReadOnlyList<Product>> GetAllAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Product> GetEntityWithSpec(ISpecifications<Product> spec)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IReadOnlyList<Product>> ListAsync(ISpecifications<Product> spec)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

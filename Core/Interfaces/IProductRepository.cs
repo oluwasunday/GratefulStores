@@ -6,7 +6,7 @@ using Core.Entities;
 
 namespace Core.Interfaces
 {
-    public interface IProductRepository
+    public interface IProductRepository : IRepository<Product>
     {
         Task<IReadOnlyList<ProductBrands>> GetProductBrandsAsync();
         Task<Product> GetProductByIdAsync(int id);

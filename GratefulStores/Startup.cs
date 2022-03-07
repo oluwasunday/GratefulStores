@@ -1,4 +1,5 @@
 using Core.Interfaces;
+using GratefulStores.Helpers;
 using Infrastructure.Data;
 using Infrastructure.Repository;
 using Microsoft.AspNetCore.Builder;
@@ -30,6 +31,9 @@ namespace GratefulStores
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // register automapper in service
+            services.AddAutoMapper(typeof(MappingProfiles));
+
             services.AddDbContext<StoreContext>(x => 
                 x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
@@ -39,6 +43,7 @@ namespace GratefulStores
             });
 
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +61,7 @@ namespace GratefulStores
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 
